@@ -74,4 +74,4 @@ En la implementación realizada se compararon los algoritmos BFS y DFS utilizand
 
 ## Autor
 
-Brayan David Riasco
+Brayan David Riascos Murillo
