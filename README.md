@@ -68,6 +68,10 @@ En cuanto al uso de memoria:
 
 Aunque en este ejemplo el consumo de memoria es similar, en grafos más grandes **BFS suele requerir más memoria que DFS**, porque debe almacenar todos los nodos de un mismo nivel en la cola.
 
+## Resultados obtenidos
+
+En la implementación realizada se compararon los algoritmos BFS y DFS utilizando el mismo grafo. El algoritmo BFS recorre el grafo por niveles, visitando primero los nodos más cercanos al nodo inicial, por lo que el recorrido obtenido fue A, B, C, D, E, F y G. Por otro lado, el algoritmo DFS explora el grafo siguiendo una rama lo más profundo posible antes de retroceder, lo que generó el recorrido A, B, D, E, G, C y F. En cuanto al uso de memoria, BFS requiere mantener una cola con los nodos pendientes por visitar, alcanzando en este caso un máximo aproximado de tres nodos almacenados simultáneamente. En contraste, DFS utiliza la pila de llamadas de la recursión, cuya profundidad máxima fue de cuatro niveles correspondientes a la ruta más profunda del grafo (A → B → E → G). Aunque en este ejemplo ambos algoritmos presentan un consumo de memoria similar, en general BFS suele requerir más memoria que DFS, ya que debe almacenar todos los nodos de un mismo nivel, mientras que DFS solo mantiene en memoria el camino actual que está explorando.
+
 ## Autor
 
 Brayan David Riasco
